@@ -1,0 +1,24 @@
+{
+  "name": "segnapunti",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/scorer",
+    "build": "npm run build -w apps/scorer",
+    "preview": "npm run preview -w apps/scorer",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p packages/engine && tsc --noEmit -p apps/scorer",
+    "e2e": "npm run e2e -w apps/scorer"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^26.6.6",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}

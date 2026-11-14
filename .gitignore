@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.DS_Store
+
+# dati privati: mai in un archivio pubblico
+contesto/
+grafiche/frame/
+grafiche/out/
+partite/
+*.mov
+*.mp4
+*.sync.json
+
+# prodotti della compilazione e delle prove
+test-results/
+playwright-report/
+.wrangler/
+
+# storyboard delle animazioni: fotogrammi del video vero e dati con i nomi veri (si rigenerano con dati.ts e render.py)
+grafiche/animazioni/storyboard/sfondi/
+grafiche/animazioni/storyboard/fotogrammi/
+grafiche/animazioni/storyboard/*.png
+grafiche/animazioni/storyboard/dati.json
+grafiche/animazioni/storyboard/dati.js
